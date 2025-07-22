@@ -162,6 +162,25 @@ int main() {
             printf(" O PIB das duas cidadea sao iguais")
             }
          break;
+         case 4:
+         printf("Atributo: Ponto turistico\n");
+         printf("%s possui %d pontos turisticos\n", nome1, turismo1);
+         printf("%s possui %d pontos turísticos\n", nome2, turismo2);
+         
+         if (turismo1 > turiamo2)
+         {
+         printf("%s possui mais pontos turisticos que %s\n", nome1, nome2);
+         }
+         else if (turismo1 < turismo2)
+         {
+         printf("%s possui mais pontoa turisticos que %s\n",nome2, nome1);
+         }
+         else 
+         {
+         printf("As duas cidades possuem a mesma quantidade de pontos turisticos\n");
+         }
+         break;
+      
          
        
          
