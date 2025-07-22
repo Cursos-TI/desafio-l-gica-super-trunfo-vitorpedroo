@@ -14,6 +14,7 @@ int main() {
 
    float supertrunfo1, supertrunfo2;
 
+   int atributo;
 
    // entrada de dados primeira carta
 
@@ -103,20 +104,49 @@ int main() {
    printf("PIB per capita da cidade 2: %.2f reais\n", pibpercapita2);
 
    // comparacao das cartas
-   printf("\n\n===== COMPARACAO DAS CARTAS POR PIB ===== \n");
-   
-   printf("A carta 1(%s) tem o Pib de %.2f bilhões de reais.\n",nome1, pib1);
-   printf("A carta 2(%s) tem o Pib de %.2f bilhões de reais.\n\n",nome2, pib2);
-   
-   if(pib1 > pib2){
-      printf("Carta 1(%s)tem um PIb maior que a Carta 2(%s).\n",nome1, nome2);
+   printf("\n\n== COMPARANDO AS CARTAS == \n");
+   printf("Qual atributo que deseja comparar? \n");
+   printf("1 - Populacao\n");
+   printf("2 - Area\n");
+   printf("3 - PIB\n");
+   printf("4 - Pontos Turisticos\n");
+   printf("5 - Densidade Populacional\n");
+   printf("6 - PIB per Capita\n");
+   scanf(" %d", &atributo);
+
+    switch(atributo){
+      case 1:
+         printf("A população de %s é de %d\n", nome1, populacao1);
+         printf("A população de %s é de %d\n", nome2, populacao2);
+      if (populacao1 > populacao2)
+      {       
+         printf("A população de %s é maior que a população de %s\n", nome1, nome2);
+      }
+      else if(populacao1 < populacao2) {
+         printf("A população de %s é maior que a população de %s\n", nome2, nome1);
+      }
+      else {
+         printf("As populações de %s e %s são iguais\n", nome1, nome2);
+      }
+      break;
+      case 2:
+         printf("A Area de %s é de %.2f\n", nome1, area1);
+         printf("A Area de %s é de %.2f\n", nome2, area2);
+      if (area1 > area1)
+      {
+         printf("A Area de %s é maior que a area de %s\n", nome1, nome2);
+      }
+      else if(area1 < area2) {
+         printf("A Area de %s é maior que a area de %s\n", nome2, nome1);
+      }
+      else {
+         printf("As areas de %s e %s são iguais\n", nome1, nome2);
+      }
+      break;
+         
+      
    }
-      else if(pib1 < pib2) {
-      printf("Carta 2 (%s) tem um PIB maior que a Carta 1(%s).\n",nome2, nome1);
-   }  
-   else{
-      printf("As duas cartas tem o mesmo PIB.\n");
-   }
+
  
 
    return 0;
