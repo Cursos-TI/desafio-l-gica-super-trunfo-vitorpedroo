@@ -116,6 +116,7 @@ int main() {
 
     switch(atributo){
       case 1:
+         printf("Atributo: População\n");
          printf("A população de %s é de %d\n", nome1, populacao1);
          printf("A população de %s é de %d\n", nome2, populacao2);
       if (populacao1 > populacao2)
@@ -130,6 +131,7 @@ int main() {
       }
       break;
       case 2:
+         printf("Atributo: Area\n");
          printf("A Area de %s é de %.2f\n", nome1, area1);
          printf("A Area de %s é de %.2f\n", nome2, area2);
       if (area1 > area1)
@@ -144,6 +146,7 @@ int main() {
       }
       break;
       case 3:
+         printf("Atributo: PIB\n");
          printf("O PIB de %s é de %.2f bilhões de reais\n", nome1, pib1);
          printf("O PIB de %s é de %.2f bilhoes de reaia\n", nome2, pib2);
          if (pib1 > pib2)
@@ -159,6 +162,7 @@ int main() {
             printf(" O PIB das duas cidadea sao iguais")
             }
          break;
+         
        
          
          
