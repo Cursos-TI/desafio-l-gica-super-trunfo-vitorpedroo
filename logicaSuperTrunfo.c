@@ -143,6 +143,24 @@ int main() {
          printf("As areas de %s e %s são iguais\n", nome1, nome2);
       }
       break;
+      case 3:
+         printf("O PIB de %s é de %.2f bilhões de reais\n", nome1, pib1);
+         printf("O PIB de %s é de %.2f bilhoes de reaia\n", nome2, pib2);
+         if (pib1 > pib2)
+         {
+            printf("O PIB de %s é maior que o PIB de %s\n", nome1, nome2);
+            }
+         else if (pib1 < pib2)
+         {
+           printf("O PIB de %s é maior que o PIB de %s\n", nome2, nome1);
+         }
+         else 
+         {
+            printf(" O PIB das duas cidadea sao iguais")
+            }
+         break;
+       
+         
          
       
    }
